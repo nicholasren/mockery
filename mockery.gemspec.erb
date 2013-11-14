@@ -1,0 +1,11 @@
+Gem::Specification.new do |s|
+  s.name        = "mockery"
+  s.version     = "0.0.1"
+  s.summary     = %{A quick way of mocking an external web service you want to consume.}
+  s.authors     = ["Nicholas Ren"]
+  s.email       = ["nicholas85211@gmail.com"]
+  s.homepage    = "http://github.com/nicholasren/mock-server"
+  s.files       = <%= Dir['lib/**/*.rb', 'README.markdown', 'LICENSE', 'Rakefile', 'rails/**/*', 'spec/**/*.*'].inspect %>
+
+  s.add_dependency "sinatra"
+end
