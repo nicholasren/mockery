@@ -21,7 +21,7 @@ One thing I want to highlight is, rather than set up a global server which respo
 
 ```
   # in rspec helper
-  require 'mocking-server'
+  require 'mocking_server'
   RSpec.configure do |config|
     config.include Mockery::Methods
   end
@@ -49,7 +49,7 @@ One thing I want to highlight is, rather than set up a global server which respo
 
 ```
   #in env.rb
-  require 'mocking-server'
+  require 'mocking_server'
   World(MockingServer::Methods)
 
 
