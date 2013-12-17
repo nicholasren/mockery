@@ -1,6 +1,6 @@
-require './lib/mockery'
+require './lib/mocking_server'
 
 RSpec.configure do |config|
-  config.include Mockery::Methods
+  config.include MockingServer::Methods
 end
 

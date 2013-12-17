@@ -1,6 +1,6 @@
 # Mockery #
 A quick way of mocking an external web service you want to consume.
-Inspired by [moco](https://github.com/dreamhead/moco), [mock-server](https://github.com/djanowski/mock-server) and [sinatra](http://www.sinatrarb.com/)
+Inspired by [moco](https://github.com/dreamhead/moco), [mock-server](https://github.com/djanowski/mock-server) and [sinatra](http://www.sinatrarb.com/).
 
 # Why #
 Integration, especially based on HTTP, e.g. web service, REST etc, is widlly used in most web development.
@@ -15,7 +15,7 @@ One thing I want to highlight is, rather than set up a global server which respo
 + Setup your mock server with sinatra's elegant DSL.
 
 ## Get it ##
-
+(haven't published to rubygems)
 `gem install mockery` or add `gem 'mockery'` in your `Gemfile`
 
 ## With rspec ##

@@ -1,7 +1,7 @@
 require "sinatra/base"
 require "logger"
 
-class Mockery
+class MockingServer
   class App < Sinatra::Base
     use Rack::ShowExceptions
   end
@@ -17,7 +17,7 @@ class Mockery
     def mock_server(*args, &block)
       app = Class.new(Sinatra::Base)
       app.class_eval(&block)
-      Mockery.new(app, *args, &block)
+      MockingServer.new(app, *args, &block)
     end
   end
 
