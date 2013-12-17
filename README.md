@@ -1,4 +1,4 @@
-# Mockery #
+# Mocking-Server #
 A quick way of mocking an external web service you want to consume.
 Inspired by [moco](https://github.com/dreamhead/moco), [mock-server](https://github.com/djanowski/mock-server) and [sinatra](http://www.sinatrarb.com/).
 
@@ -15,14 +15,13 @@ One thing I want to highlight is, rather than set up a global server which respo
 + Setup your mock server with sinatra's elegant DSL.
 
 ## Get it ##
-(haven't published to rubygems)
-`gem install mockery` or add `gem 'mockery'` in your `Gemfile`
+`gem install mocking-server` or add `gem 'mocking-server'` in your `Gemfile`
 
 ## With rspec ##
 
 ```
   # in rspec helper
-  require 'mockery'
+  require 'mocking-server'
   RSpec.configure do |config|
     config.include Mockery::Methods
   end
@@ -50,8 +49,8 @@ One thing I want to highlight is, rather than set up a global server which respo
 
 ```
   #in env.rb
-  require 'mockery'
-  World(Mockery::Methods)
+  require 'mocking-server'
+  World(MockingServer::Methods)
 
 
   # in steps
