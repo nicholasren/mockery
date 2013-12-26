@@ -23,7 +23,7 @@ One thing I want to highlight is, rather than set up a global server which respo
   # in rspec helper
   require 'mocking_server'
   RSpec.configure do |config|
-    config.include Mockery::Methods
+    config.include MockingServer::Methods
   end
 
   # in spec
